@@ -107,7 +107,7 @@ header h1 {
 }
 
 .card {
-    width: 20rem;
+    width: 22rem;
     /* height: 23rem; */
     height: auto;
     border-radius: 1em;
@@ -137,7 +137,7 @@ header h1 {
 }
 
 .card_content h5 {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 600;
 }
 
