@@ -64,11 +64,11 @@ header h1 {
 
 .menu_list {
     display: flex;
-    gap: 4.8rem;
+    gap: 4.5rem;
 }
 
 .menu_list li a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #212529;
