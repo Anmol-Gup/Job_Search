@@ -47,21 +47,6 @@ const createCard = (job) => {
     card_content.appendChild(link);
 }
 
-const getjobs = async () => {
-    try {
-        let url='http://localhost:3000/getjobs/'
-
-        const jobs = await fetch(url)
-        const result = await jobs.json();
-        result.forEach(element => {
-            createCard(element)
-        });
-    }
-    catch (error) {
-        console.log(error)
-    }
-}
-
 const getnextjobs=async()=>{
     try {
         if(currentPage===0)
@@ -73,7 +58,7 @@ const getnextjobs=async()=>{
             previous.style.border='none'  
         }
         currentPage++;
-        let url=`https://www.vercel.com/anmol-gups-projects/job-api/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://job-api-plum.vercel.app/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         const jobs = await fetch(url)
         const result = await jobs.json()
         totalJobs=result.totaljobs
@@ -114,7 +99,7 @@ const getnextjobs=async()=>{
 const getpreviousjobs=async()=>{
     try {
         currentPage--;
-        let url=`https://www.vercel.com/anmol-gups-projects/job-api/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://job-api-plum.vercel.app/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         if(currentPage>1)
         {   
             previous.style.cursor='pointer'

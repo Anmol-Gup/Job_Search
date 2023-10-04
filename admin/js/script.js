@@ -8,18 +8,6 @@ heading.onclick=()=>{
     location.href='index.html'
 }
 
-const getjobs = async () => {
-    try {
-        const jobs = await fetch('http://localhost:3000/getjobs')
-        const result = await jobs.json();
-        result.forEach((element) => {
-            createRow(element)
-        });
-    }
-    catch (error) {
-        console.error(error)
-    }
-}
 const requestOptions = {
     method: 'DELETE', // HTTP method
     headers: {
@@ -28,7 +16,7 @@ const requestOptions = {
 };
 const deletejob=async(id)=>{
     try{
-        const data=await fetch(`http://localhost:3000/deletejob/${id}`,requestOptions)
+        const data=await fetch(`https://job-api-plum.vercel.app/deletejob/${id}`,requestOptions)
         const result=data.json()
         // console.log(result)
         const btn=document.getElementById(id)
@@ -83,7 +71,7 @@ const getnextjobs=async()=>{
             previous.style.border='none'  
         }
         currentPage++;
-        let url=`http://localhost:3000/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://job-api-plum.vercel.app/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         const jobs = await fetch(url)
         const result = await jobs.json()
         totalJobs=result.totaljobs
@@ -124,7 +112,7 @@ const getnextjobs=async()=>{
 const getpreviousjobs=async()=>{
     try {
         currentPage--;
-        let url=`http://localhost:3000/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://job-api-plum.vercel.app/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         if(currentPage>1)
         {   
             previous.style.cursor='pointer'

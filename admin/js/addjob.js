@@ -12,7 +12,7 @@ form.onsubmit = async (event) => {
 
     // Send a POST request to your server
     try {
-        const response = await fetch('http://localhost:3000/addjob', {
+        const response = await fetch('https://job-api-plum.vercel.app/addjob', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json', 
