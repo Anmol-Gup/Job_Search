@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobSearch-Add Job</title>
+    <link rel="stylesheet" href="./css/addjob.css" type="text/css">
+    <link rel="icon" href="../Logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <img src="../Logo.jpg" alt="JobSearch">
+            <h1>JobSearch</h1>
+        </div>
+        <nav class="menu">
+            <ul class="menu_list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./index.html">Job List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <form action="http://localhost:3000/addjob" method="post">
+            <fieldset>
+                <legend>
+                    <h2>Add Job Details</h2>
+                </legend>
+                <input type="text" name="company" placeholder="Enter company name" required><br />
+                <input type="text" name="role" placeholder="Enter role" required><br />
+                <input type="url" name="link" placeholder="Enter apply link" required><br />
+                <input type="submit" name="submit" value="Submit"><br />
+            </fieldset>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>Created With &#x2764; by Surya</p>
+    </footer>
+    <script src="./js/addjob.js"></script>
+</body>
+
+</html>
