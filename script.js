@@ -73,7 +73,7 @@ const getnextjobs=async()=>{
             previous.style.border='none'  
         }
         currentPage++;
-        let url=`http://localhost:3000/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://www.vercel.com/anmol-gups-projects/job-api/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         const jobs = await fetch(url)
         const result = await jobs.json()
         totalJobs=result.totaljobs
@@ -114,7 +114,7 @@ const getnextjobs=async()=>{
 const getpreviousjobs=async()=>{
     try {
         currentPage--;
-        let url=`http://localhost:3000/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
+        let url=`https://www.vercel.com/anmol-gups-projects/job-api/getjobs/job/?page=${currentPage}&limit=${jobPerPage}`
         if(currentPage>1)
         {   
             previous.style.cursor='pointer'
