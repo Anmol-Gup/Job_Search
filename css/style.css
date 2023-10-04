@@ -46,7 +46,7 @@ header h1 {
 }
 
 .heading {
-    flex: 70%;
+    flex: 65%;
     display: flex;
     align-items: center;
     padding: 2rem;
@@ -59,7 +59,7 @@ header h1 {
 }
 
 .menu {
-    flex: 30%;
+    flex: 35%;
 }
 
 .menu_list {
@@ -68,7 +68,7 @@ header h1 {
 }
 
 .menu_list li a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #212529;
@@ -119,11 +119,13 @@ header h1 {
     text-align: center;
     margin: 2rem;
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: all 0.4s linear;
 }
+
 .card_content {
     line-height: 3.2rem;
     text-transform: capitalize;
@@ -143,6 +145,7 @@ header h1 {
     font-size: 1.8rem;
     margin: 0.5rem 0;
 }
+
 .card_content a {
     box-sizing: border-box;
     background-color: blue;
@@ -247,7 +250,7 @@ body {
     }
 
     header h1 {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     .heading {
@@ -259,8 +262,8 @@ body {
     }
 
     .heading img {
-        width: 5rem;
-        height: 5rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
     .menu {
@@ -296,6 +299,7 @@ body {
     .active ion-icon[name='menu'] {
         display: none;
     }
+
     .pagination a {
         font-size: 1.5rem;
         color: black;
@@ -304,6 +308,7 @@ body {
         transition: background-color .3s;
         border: 1px solid #ddd;
     }
+
     .social_media p {
         font-size: 2rem;
     }
@@ -313,5 +318,69 @@ body {
         margin: 1rem;
         height: 2.5rem;
         color: white;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width:1024px) {
+    .heading {
+        flex: 50%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .heading img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .menu {
+        flex: 50%;
+    }
+
+    .menu_list {
+        display: flex;
+        gap: 4.5rem;
+    }
+
+    .menu_list li a {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #212529;
+        transition: 0.4 all;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1280px) {
+    .heading {
+        flex: 55%;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .heading img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .menu {
+        flex: 45%;
+    }
+
+    .menu_list {
+        display: flex;
+        gap: 4.5rem;
+    }
+
+    .menu_list li a {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #212529;
+        transition: 0.4 all;
     }
 }
