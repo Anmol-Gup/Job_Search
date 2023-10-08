@@ -22,7 +22,7 @@ close.addEventListener('click', (event) => {
 })
 
 const createCard = (job) => {
-    console.log(job.url)
+    console.log(job)
     const card = document.createElement('div');
     card.classList.add('card');
     card.setAttribute('id', job._id)
