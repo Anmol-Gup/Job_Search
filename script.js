@@ -6,7 +6,7 @@ const next=document.querySelector('#next')
 const previous=document.querySelector('#previous')
 
 let currentPage=0;
-let jobPerPage=15;
+let jobPerPage=5;
 let totalJobs=0;
 
 heading.onclick=()=>{
