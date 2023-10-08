@@ -42,6 +42,7 @@ const createRow=(job)=>{
     const url=document.createElement('td')
     const a=document.createElement('a')
     a.href=job.url
+    a.target='_blank'
     a.innerHTML="Apply Link"
     url.appendChild(a);
 
