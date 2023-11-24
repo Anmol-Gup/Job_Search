@@ -5,3 +5,4 @@ Demo Link: https://jobsearch-alpha.vercel.app/
 
 API Source Code: https://github.com/Anmol-Gup/Job_Api
 
+![image](https://github.com/Anmol-Gup/Job_Search/assets/66009201/62efaeab-e90f-4bf7-8001-bb293ef35d89)
